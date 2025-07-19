@@ -1,0 +1,26 @@
+### signup
+POST {{BETTER_AUTH_URL}}/api/auth/sign-up/email
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "lilbrown3000+hard@gmail.com",
+  "password": "HardPass000#",
+  "callbackURL": "/"
+}
+
+
+### login
+POST {{BETTER_AUTH_URL}}/api/auth/sign-in/email
+Content-Type: application/json
+
+{
+  "email": "lilbrown3000+hard@gmail.com",
+  "password": "HardPass000#"
+}
+
+### Get session
+GET {{BETTER_AUTH_URL}}/api/auth/get-session
+
+### Sign out
+POST {{BETTER_AUTH_URL}}/api/auth/sign-out
