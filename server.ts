@@ -35,3 +35,5 @@ app.listen({ port: parseInt(process.env.PORT!) || 3000 }, (err: any) => {
 		process.exit(1);
 	}
 });
+
+export default app;
